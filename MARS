@@ -1,3 +1,36 @@
 Music Affective Response Scale (MARS; Dingle et al, in prep)
 
-Scoring: N
+Scoring:      1:    Never True 
+              2:    Very rarely true 
+              3:    Seldom true
+              4:    Sometimes true 
+              5:    Frequently true
+              6:    Almost always true 
+              7:    Always true 
+              
+Instructions: Below you will find a list of statements. Please rate the truth of each statement as it applies to you when you listen to music in genreal 
+
+Item                                                                          Subscale 
+MARS1       When I hear music I am drawn to it                                P
+MARS2       Music makes me feel happy                                         P
+MARS3       I don't really notice music when it's playing                     N
+MARS4       I usually switch off the music when I enter a room or a car       N
+MARS5       When I'm upset about something music makes me feel worse          N
+MARS6       When I hear music I want to sing/hum along                        P
+MARS7       Music makes me feel relaxed                                       P
+MARS8       I smile when I hear music                                         P
+MARS9       I tap my foot when I hear music                                   P
+MARS10      Music makes me feel anxious and disturbed                         N
+MARS11      When I hear music I want to get up and dance                      P
+MARS12      If I'm upset about something music makes me feel better           P
+MARS13      I often turn the volume down when music is playing                N
+MARS14      I am moved to tears by music                                      P
+MARS15      I feel chills when I listen to a moving piece of music            P 
+
+
+R Code 
+#MARS Positive 
+mydata$MARSP <- (MARS1 + MARS2 + MARS6 + MARS7 + MARS8 + MARS9 + MARS11 + MARS12 + MARS14 + MARS15) / 10 
+
+#MARS negative 
+mydata$MARSN <- (MARS3 + MARS4 + MARS5 + MARS10 +MARS15) / 5 
