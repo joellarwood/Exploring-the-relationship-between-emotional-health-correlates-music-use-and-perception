@@ -1,0 +1,61 @@
+BRIEF Music in Mood Questionnaire (b-MMR; Saarikallio, 2011)
+
+Instructions	Using the scale provided as a guide, indicate how much you agree or disagree with each of the following statements by circling the corresponding number
+
+Scoring:	1: Strongly disagree 
+	        2: Disagree 
+	        3: Neutral 
+	        4: Agree
+	        5: Strongly Agree 
+          
+Item 
+MMR1	    I usually put background music on to make the atmosphere more pleasant 										    E
+MMR2	    When I’m busy around the house and no one else is around, I like to have some music 
+          on in the background										                                                      E
+MMR3	    I listen to music to make cleaning and doing other housework more pleasant 										E
+MMR4	    I Listen to music to perk up after a rough day 									                            	R
+MMR5	    When I’m exhausted, I listen to music to perk up						                          				R
+MMR6	    When I’m tired out, I rest by listening to music 						                          				R
+MMR7	    Music has offered me magnificent experiences							                               			SS
+MMR8	    I want to feel the music in my whole body							                                   			SS
+MMR9	    I feel fantastic putting my soul fully into the music						                      				SS
+MMR10	    For me, music is a way to forget about my worries 						                        				DN
+MMR11	    When stressful thoughts keep going round and round in my mind, I start to 
+          listen to music to get them off my mind 										                                  DN
+MMR12	    When I feel bad, I try to get myself in a better mood by engaging in some nice,
+          music-related activity								                                                    		DN
+MMR13	    When I’m really angry, I feel like listening to some angry music 						          				DS
+MMR14	    When everything feels bad, it helps me to listen to music that expresses my bad feelings			DS
+MMR15	    When I’m angry with someone, I listen to music that expresses my anger								    		DS
+MMR16	    Music helps me to understand different feelings in myself										                  MW
+MMR17	    Music has helped me to work through hard experiences								                      		MW
+MMR18	    When I’m distressed by something, music helps me to clarify my feelings			    							MW
+MMR19	    When everything feels bad, music understands and comforts me 								              		S
+MMR20	    When I’m feeling sad, music comforts me 										                                  S
+MMR21	    I listen to music to find solace when worries overwhelm me 			                							S
+
+R CODE
+ 
+# Entertainment 
+mydata$Entertainment <- (MMR1 + MMR2 + MMR3) / 3
+
+# Revival 
+mydata$Revival <- (MMR4 + MMR5 + MMR6) / 3
+
+#Strong Sensation 
+mydata$StrongSensation <- (MMR7 + MMR 8 + MMR9) / 3 
+
+#Diversion 
+mydata$Diversion <- (MMR10 + MMR11 + MMR12) / 3
+
+#Distraction
+mydata$Diversion <- (MMR13 + MMR14 + MMR15) / 3
+
+#Mental Work 
+mydata$MentalWork<- (MMR16 + MMR17 + MMR18) / 3 
+
+#Solace 
+mydata$Solace <- (MMR19 + MMR20 + MMR21) / 3
+
+Total 
+mydata$bMMR <- (Entertainment + Revivial + StrongSensation + Diversion + MentalWork + Solace)
