@@ -1,0 +1,28 @@
+Difficulties in Emoption Regulation Scale - 16 (Bjureberg et al. 2016
+
+Scoring: 	1: Almost Never 
+	        2: Sometimes 
+	        3: About half the time 
+	        4: Most of the time 
+	        5: Almost always 
+          
+Item      
+DERS1     	I have difficulty making sense out of my feelings
+DERS2       I am confused about how I feel
+DERS3     	When I’m upset, I have difficulty getting work done
+DERS4	      When I’m upset, I become out of control
+DERS5	      When I’m upset, I believe I will remain that way for a long time
+DERS6	      When I’m upset, I believe that I’ll end up feeling very depressed
+DERS7	      When I’m upset, I have difficulty focusing on other things
+DERS8	      When I’m upset, I feel ashamed with myself for feeling that way
+DERS9	      When I am upset, I feel out of control
+DERS10	    When I’m upset, I feel like I am weak
+DERS11	    When I’m upset, I have difficulty controlling my behaviours
+DERS12	    When I’m upset, I believe there is nothing I can do to make myself feel better
+DERS13	    When I’m upset, I become irritated with myself for feeling that way
+DERS14	    When I’m upset, I start to feel very bad about myself
+DERS15	    When I’m upset, I have difficulty thinking about anything else
+DERS16	    When I’m upset, my emotions feel overwhelming
+
+R CODE 
+mydata$DERS <- (DERS1 + DERS2 + DERS3 + DERS4 + DERS5 + DERS6 + DERS7 + DERS8 + DERS9 +DERS10 + DERS11 + DERS12 + DERS13 + DERS14 + DERS15 + DERS16)
