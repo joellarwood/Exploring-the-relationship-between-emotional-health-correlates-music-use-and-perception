@@ -1,0 +1,57 @@
+Toronto Alexithymia Scale (TAS) 20 (Bagby, Parker & Taylor, 1994)
+
+Scoring:	1: Strongly disagree 
+	        2: Disagree 
+	        3: Neutral 
+	        4: Agree
+	        5: Strongly Agree 
+   
+Instructions	Using the scale provided as a guide, indicate how much you agree or disagree with each of the following statements by circling the corresponding number
+
+Item      
+TAS1	        I am often confused about what emotion I am feeling										                              DI
+TAS2	        It is difficult for me to find the right words for my feelings										                  DD
+TAS3	        I have physical sensations that even doctors don’t understand										                    DI
+TAS4	        I am able to describe my feelings easily 										                                        DD
+TAS5	        I prefer to analyse problems rather than just describe them 								                    		EO
+TAS6	        When I am upset, I don’t know if I am sad, frightened, or angry 						                 				DI
+TAS7	        I am often puzzled by sensations in my body							                                      			DI
+TAS8	        I prefer to just let things happen than to understand why they turned out that way 									EO
+TAS9	        I have feelings that I can’t quite identify 										                                    DI
+TAS10	        Being in touch with emotions is essential 										                                      EO
+TAS11	        I find it hard to describe how I feel about people										                              DD
+TAS12	        People tell me to describe my feelings more 										                                    DD
+TAS13	        I don’t know what’s going on inside me 										                                          DI
+TAS14	        I often don’t know why I am angry 									                                              	DI
+TAS15	        I prefer talking to people about their daily activities rather than their feelings									EO
+TAS16	        I prefer to watch ‘light’ entertainment shows rather than psychological dramas										  EO
+TAS17	        It is difficult for me to reveal my innermost feelings, even to someone close										    DD
+TAS18	        I can feel close to someone, even in moments of silence										                          EO
+TAS19	        I find examination of my feelings useful in solving personal problems 										          EO
+TAS20	        Looking for hidden meanings in movies or plays distracts from their enjoyment 										  EO
+
+R CODE 
+#Reverse scoring 
+library(car)
+mydata$TAS4r <- recode (TAS4, 1 = 5 ; 2 = 4 ; 3 = 3 ; 4 = 2 ; 5 = 1)
+mydata$TAS5r <- recode (TAS5, 1 = 5 ; 2 = 4 ; 3 = 3 ; 4 = 2 ; 5 = 1)
+mydata$TAS10r <- recode (TAS10, 1 = 5 ; 2 = 4 ; 3 = 3 ; 4 = 2 ; 5 = 1)
+mydata$TAS18r <- recode (TAS18, 1 = 5 ; 2 = 4 ; 3 = 3 ; 4 = 2 ; 5 = 1)
+mydata$TAS19r <- recode (TAS19, 1 = 5 ; 2 = 4 ; 3 = 3 ; 4 = 2 ; 5 = 1)
+
+#Difficulty Identifying Feelings
+mydata$TASDI <- (TAS1 + TAS3 + TAS6 + TAS7 + TAS9 + TAS13 + TAS14) 
+
+#Difficulty Describing Feelings 
+mydata$TASDD <- (TAS2 + TAS 4 + TAS11 + TAS12 + TAS17)
+
+#Externally Oriented thinking 
+mydata$TASEO < - (TAS5 + TAS8 + TAS10 + TAS15 + TAS16 + TAS18 + TAS19 + TAS20)
+
+#TAS Total 
+TAStotal <- (TASDD + TASDI + TASEO)
+#High and Low Alexithymia 
+mydata$TAScat [mydata$TAStotal <= 51] <- 0 
+mydata$TAScat [mydata$TAStotal >= 61 <- 2
+mydata$TAScat [mydata$TAStotal >51 & mydata$TAStotal < 61] <- 1
+mydata$TAScat <- factor (mydata$TAScat, levels = c(0, 1, 2), labels = c("Low Alexithymia", "Uncategorised Alexithymia", "High Alexithymia"))
