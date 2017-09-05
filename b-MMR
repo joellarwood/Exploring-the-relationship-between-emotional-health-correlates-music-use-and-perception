@@ -37,25 +37,25 @@ MMR21	    I listen to music to find solace when worries overwhelm me 			        
 R CODE
  
 # Entertainment 
-mydata$Entertainment <- (MMR1 + MMR2 + MMR3) / 3
+mydata$Entertainment <- (mydata$MMR1 + mydata$MMR2 + mydata$MMR3) / 3
 
 # Revival 
-mydata$Revival <- (MMR4 + MMR5 + MMR6) / 3
+mydata$Revival <- (mydata$MMR4 + mydata$MMR5 + mydata$MMR6) / 3
 
 #Strong Sensation 
-mydata$StrongSensation <- (MMR7 + MMR 8 + MMR9) / 3 
+mydata$StrongSensation <- (mydata$MMR7 + mydata$MMR 8 + mydata$MMR9) / 3 
 
 #Diversion 
-mydata$Diversion <- (MMR10 + MMR11 + MMR12) / 3
+mydata$Diversion <- (mydata$MMR10 + mydata$MMR11 + mydata$MMR12) / 3
 
 #Distraction
-mydata$Diversion <- (MMR13 + MMR14 + MMR15) / 3
+mydata$Diversion <- (mydata$MMR13 + mydata$MMR14 + mydata$MMR15) / 3
 
 #Mental Work 
-mydata$MentalWork<- (MMR16 + MMR17 + MMR18) / 3 
+mydata$MentalWork<- (mydata$MMR16 + mydata$MMR17 + mydata$MMR18) / 3 
 
 #Solace 
-mydata$Solace <- (MMR19 + MMR20 + MMR21) / 3
+mydata$Solace <- (mydata$MMR19 + mydata$MMR20 + mydata$MMR21) / 3
 
 Total 
-mydata$bMMR <- (Entertainment + Revivial + StrongSensation + Diversion + MentalWork + Solace)
+mydata$bMMR <- (mydata$Entertainment + mydata$Revivial + mydata$StrongSensation + mydata$mydata$Diversion + mydata$MentalWork + mydata$Solace)
