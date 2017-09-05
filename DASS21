@@ -17,7 +17,7 @@ DASS6	  S           I tended to over-react to situations
 DASS7	  A           I experience tembling (e.g. in the hands)
 DASS8	  S           I felt that I was using a lot of nurvous energy 
 DASS9	  A           I was worrreid about situations in which I might panic and make a fool of myself 
-DASS10	D           I felt that I had nthing to look forward to 
+DASS10  D           I felt that I had nthing to look forward to 
 DASS11	S           I found myself getting agitated 
 DASS12	S           I found it difficult to relax
 DASS13	D           I felt down-hearted and blue 
@@ -32,10 +32,10 @@ DASS21	D           I felt that life was meaningless
 
 R code 
 #Depression subscale 
-mydata$Depression <- (DASS3 + DASS5 + DASS10 + DASS13 + DASS16 + DASS17 + DASS21) * 2
+mydata$Depression <- (mydata$DASS3 + mydata$DASS5 + mydata$DASS10 + mydata$DASS13 + mydata$DASS16 + mydata$DASS17 + mydata$DASS21) * 2
 #Anxiety subscale 
-mydata$Anxiety <- (DASS2 + DASS4 + DASS7 + DASS9 + DASS15 + DASS19 + DASS20) * 2 
+mydata$Anxiety <- (mydata$DASS2 + mydata$DASS4 + mydata$DASS7 + mydata$DASS9 + mydata$DASS15 + mydata$DASS19 + mydata$DASS20) * 2 
 #Stress subscale 
-mydata$Stress <- (DASS1 + DASS6 + DASS8 + DASS11 + DASS12 + DASS14 + DASS18) * 2 
+mydata$Stress <- (mydata$DASS1 + mydata$DASS6 + mydata$DASS8 + mydata$DASS11 + mydata$DASS12 + mydata$DASS14 + mydata$DASS18) * 2 
 #Total 
-mydata$DASStotal <- Depression + Anxiety + Stress 
+mydata$DASStotal <- mydata$Depression + mydata$Anxiety + mydata$Stress 
