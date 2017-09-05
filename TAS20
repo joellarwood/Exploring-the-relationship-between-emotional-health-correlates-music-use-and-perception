@@ -40,16 +40,16 @@ mydata$TAS18r <- recode (TAS18, 1 = 5 ; 2 = 4 ; 3 = 3 ; 4 = 2 ; 5 = 1)
 mydata$TAS19r <- recode (TAS19, 1 = 5 ; 2 = 4 ; 3 = 3 ; 4 = 2 ; 5 = 1)
 
 #Difficulty Identifying Feelings
-mydata$TASDI <- (TAS1 + TAS3 + TAS6 + TAS7 + TAS9 + TAS13 + TAS14) 
+mydata$TASDI <- (mydata$TAS1 + mydata$TAS3 + mydata$TAS6 + mydata$TAS7 + mydata$TAS9 + mydata$TAS13 + mydata$TAS14) 
 
 #Difficulty Describing Feelings 
-mydata$TASDD <- (TAS2 + TAS 4 + TAS11 + TAS12 + TAS17)
+mydata$TASDD <- (mydata$TAS2 + mydata$TAS4 + mydata$TAS11 + mydata$TAS12 + mydata$TAS17)
 
 #Externally Oriented thinking 
-mydata$TASEO < - (TAS5 + TAS8 + TAS10 + TAS15 + TAS16 + TAS18 + TAS19 + TAS20)
+mydata$TASEO < - (mydata$TAS5 + mydata$TAS8 + mydata$TAS10 + mydata$TAS15 + mydata$TAS16 + mydata$TAS18 + mydata$TAS19 + mydata$TAS20)
 
 #TAS Total 
-TAStotal <- (TASDD + TASDI + TASEO)
+TAStotal <- (mydata$TASDD + mydata$TASDI + mydata$TASEO)
 #High and Low Alexithymia 
 mydata$TAScat [mydata$TAStotal <= 51] <- 0 
 mydata$TAScat [mydata$TAStotal >= 61 <- 2
