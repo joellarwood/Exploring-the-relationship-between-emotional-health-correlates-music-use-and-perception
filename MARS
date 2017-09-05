@@ -30,7 +30,7 @@ MARS15      I feel chills when I listen to a moving piece of music            P
 
 R Code 
 #MARS Positive 
-mydata$MARSP <- (MARS1 + MARS2 + MARS6 + MARS7 + MARS8 + MARS9 + MARS11 + MARS12 + MARS14 + MARS15) / 10 
+mydata$MARSP <- (mydata$MARS1 + mydata$MARS2 + mydata$MARS6 + mydata$MARS7 + mydata$MARS8 + mydata$MARS9 + mydata$MARS11 + mydata$MARS12 + mydata$MARS14 + mydata$MARS15) / 10 
 
 #MARS negative 
-mydata$MARSN <- (MARS3 + MARS4 + MARS5 + MARS10 +MARS15) / 5 
+mydata$MARSN <- (mydata$MARS3 + mydata$MARS4 + mydata$MARS5 + mydata$MARS10 + mydata$MARS15) / 5 
