@@ -23,7 +23,7 @@ MESI7	      Certain types of music help me think
 
 R CODE 
 Cognitive and Emotion Regulation 
-mydata$MESI <- (MESI1 + MESI2 + MESI3 + MESI4 + MESI5 + MESI6 + MESI7)
+mydata$MESI <- (mydata$MESI1 + mydata$MESI2 + mydata$MESI3 + mydata$MESI4 + mydata$MESI5 + mydata$MESI6 + mydata$MESI7)
 
 MES III (Social connection)
 
@@ -33,4 +33,4 @@ MESIII3	    There is a greater connection with my friends when we like the same 
 
 R CODE 
 Social Connection 
-mydata$MESIII <- (MESIII1 + MESIII2 + MESIII3)
+mydata$MESIII <- (mydata$MESIII1 + mydata$MESIII2 + mydata$MESIII3)
