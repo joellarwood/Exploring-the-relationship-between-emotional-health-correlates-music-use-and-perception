@@ -25,4 +25,4 @@ DERS15	    When I’m upset, I have difficulty thinking about anything else
 DERS16	    When I’m upset, my emotions feel overwhelming
 
 R CODE 
-mydata$DERS <- (DERS1 + DERS2 + DERS3 + DERS4 + DERS5 + DERS6 + DERS7 + DERS8 + DERS9 +DERS10 + DERS11 + DERS12 + DERS13 + DERS14 + DERS15 + DERS16)
+mydata$DERS <- (mydata$DERS1 + mydata$DERS2 + mydata$DERS3 + mydata$DERS4 + mydata$DERS5 + mydata$DERS6 + mydata$DERS7 + mydata$DERS8 + mydata$DERS9 + mydata$DERS10 + mydata$DERS11 + mydata$DERS12 + mydata$DERS13 + mydata$DERS14 + mydata$DERS15 + mydata$DERS16)
