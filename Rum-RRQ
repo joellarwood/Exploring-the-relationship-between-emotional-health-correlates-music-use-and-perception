@@ -30,4 +30,4 @@ mydata$RUM9r <- recode (RUM9, 1 = 5 ; 2 = 4 ; 3 = 3 ; 4 = 2 ; 5 = 1)
 mydata$RUM10r <- recode (RUM10, 1 = 5 ; 2 = 4 ; 3 = 3 ; 4 = 2 ; 5 = 1)	
 
 #TOTAL 
-mydata$RUMtotal <- (RUM1 + RUM2 + RUM3 + RUM4 + RUM5 + RUM6r + RUM7 + RUM8 + RUM9r + RUM10r + RUM11 + RUM12)/12
+mydata$RUMtotal <- (mydata$RUM1 + mydata$RUM2 + mydata$RUM3 + mydata$RUM4 + mydata$RUM5 + mydata$RUM6r + mydata$RUM7 + mydata$RUM8 + mydata$RUM9r + mydata$RUM10r + mydata$RUM11 + mydata$RUM12)/12
