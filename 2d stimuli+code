@@ -29,14 +29,14 @@ MUAR = AROUSAL RATING
  #FEAR MUSIC 
   STIMULI USED
     MU11
-    MU12
     MU13
+    MU14
     MU15
    R CODE
    #VALENCE
-   mydata$MUVAFEAR <- (mydata$MUVA11 + mydata$MUVA12 + mydata$MUVA13 + mydata$MUVA15) / 4
+   mydata$MUVAFEAR <- (mydata$MUVA11 + mydata$MUVA13 + mydata$MUVA14 + mydata$MUVA15) / 4
    #AROUSAL
-   mydata$MUARFEAR <- (mydata$MUAR11 + mydata$MUAR12 + mydata$MUAR13 + mydata$MUAR15) / 4
+   mydata$MUARFEAR <- (mydata$MUAR11 + mydata$MUAR13 + mydata$MUAR14 + mydata$MUAR15) / 4
    
    #HAPPY MUSIC 
     STIMULI 
