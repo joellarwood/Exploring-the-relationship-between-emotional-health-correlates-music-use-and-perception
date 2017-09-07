@@ -4,10 +4,10 @@ MUVA = VALENCE RATING
 MUAR = AROUSAL RATING 
 #SAD MUSIC 
   STIMULI USED 
-    MU1 
-    MU2
-    MU3
-    MU69
+    MU31 
+    MU86
+    MU88
+    MU109
    R CODE 
    #Valece
    mydata$MUVASAD <- (mydata$MUVA31 + mydata$MUVA86 + mydata$MUVA88 + mydata$MUVA109) / 4
