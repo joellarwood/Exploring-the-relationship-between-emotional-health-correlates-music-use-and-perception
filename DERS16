@@ -5,24 +5,25 @@ Scoring: 	1: Almost Never
 	        3: About half the time 
 	        4: Most of the time 
 	        5: Almost always 
-          
+Instructions: Please indicate how often the following statements apply to you by writing the appropriate number from the scale above           
+
 Item      
-DERS1     	I have difficulty making sense out of my feelings
-DERS2       I am confused about how I feel
-DERS3     	When I’m upset, I have difficulty getting work done
-DERS4	      When I’m upset, I become out of control
-DERS5	      When I’m upset, I believe I will remain that way for a long time
-DERS6	      When I’m upset, I believe that I’ll end up feeling very depressed
-DERS7	      When I’m upset, I have difficulty focusing on other things
-DERS8	      When I’m upset, I feel ashamed with myself for feeling that way
-DERS9	      When I am upset, I feel out of control
-DERS10	    When I’m upset, I feel like I am weak
-DERS11	    When I’m upset, I have difficulty controlling my behaviours
-DERS12	    When I’m upset, I believe there is nothing I can do to make myself feel better
-DERS13	    When I’m upset, I become irritated with myself for feeling that way
-DERS14	    When I’m upset, I start to feel very bad about myself
-DERS15	    When I’m upset, I have difficulty thinking about anything else
-DERS16	    When I’m upset, my emotions feel overwhelming
+DERS1_timepoint     		I have difficulty making sense out of my feelings
+DERS2_timepoint        		I am confused about how I feel
+DERS3_timepoint      		When I’m upset, I have difficulty getting work done
+DERS4_timepoint 	      	When I’m upset, I become out of control
+DERS5_timepoint 	      	When I’m upset, I believe I will remain that way for a long time
+DERS6_timepoint 	      	When I’m upset, I believe that I’ll end up feeling very depressed
+DERS7_timepoint 	     	When I’m upset, I have difficulty focusing on other things
+DERS8_timepoint 	      	When I’m upset, I feel ashamed with myself for feeling that way
+DERS9_timepoint 	      	When I am upset, I feel out of control
+DERS10_timepoint 	    	When I’m upset, I feel like I am weak
+DERS11_timepoint 	    	When I’m upset, I have difficulty controlling my behaviours
+DERS12_timepoint 	    	When I’m upset, I believe there is nothing I can do to make myself feel better
+DERS13_timepoint 	    	When I’m upset, I become irritated with myself for feeling that way
+DERS14_timepoint 	    	When I’m upset, I start to feel very bad about myself
+DERS15_timepoint 	    	When I’m upset, I have difficulty thinking about anything else
+DERS16_timepoint 	    	When I’m upset, my emotions feel overwhelming
 
 R CODE 
-mydata$DERS <- (mydata$DERS1 + mydata$DERS2 + mydata$DERS3 + mydata$DERS4 + mydata$DERS5 + mydata$DERS6 + mydata$DERS7 + mydata$DERS8 + mydata$DERS9 + mydata$DERS10 + mydata$DERS11 + mydata$DERS12 + mydata$DERS13 + mydata$DERS14 + mydata$DERS15 + mydata$DERS16)
+mydata$DERS <- (mydata$DERS1_timepoint + mydata$DERS2_timepoint + mydata$DERS3_timepoint + mydata$DERS4_timepoint + mydata$DERS5_timepoint + mydata$DERS6_timepoint + mydata$DERS7_timepoint + mydata$DERS8_timepoint + mydata$DERS9_timepoint + mydata$DERS10_timepoint + mydata$DERS11_timepoint + mydata$DERS12_timepoint + mydata$DERS13_timepoint + mydata$DERS14_timepoint + mydata$DERS15_timepoint + mydata$DERS16_timepoint)
