@@ -13,24 +13,24 @@ Scoring:	  1: Strongly disagree
 	          5: Strongly Agree 
 MES I (Cognitive and Emotion Regulation) 
 
-MESI1	      I often listen to music when I'm feeling down 
-MESI2	      Specific types of music make me feel better
-MESI3	      Music often takes away tension at the end of the day 
-MESI4	      I often listen to new compositions 
-MESI5	      I use a particular type of music to get me through tough times 
-MESI6	      Music is often a source of inspiration for me 
-MESI7	      Certain types of music help me think 
+MESI1_timepoint	      I often listen to music when I'm feeling down 
+MESI2_timepoint	      Specific types of music make me feel better
+MESI3_timepoint	      Music often takes away tension at the end of the day 
+MESI4_timepoint	      I often listen to new compositions 
+MESI5_timepoint	      I use a particular type of music to get me through tough times 
+MESI6_timepoint	      Music is often a source of inspiration for me 
+MESI7_timepoint	      Certain types of music help me think 
 
 R CODE 
 Cognitive and Emotion Regulation 
-mydata$MESI <- (mydata$MESI1 + mydata$MESI2 + mydata$MESI3 + mydata$MESI4 + mydata$MESI5 + mydata$MESI6 + mydata$MESI7)
+mydata$MESI <- (mydata$MESI1_timepoint + mydata$MESI2_timepoint + mydata$MESI3_timepoint + mydata$MESI4_timepoint + mydata$MESI5_timepoint + mydata$MESI6_timepoint + mydata$MESI7_timepoint)
 
 MES III (Social connection)
 
-MESIII1	    Having a similar taste in mysic often helps me relate better to my peers
-MESIII2	    I am able to make more friends when we like the same type of music 
-MESIII3	    There is a greater connection with my friends when we like the same music 
+MESIII1_timepoint	Having a similar taste in mysic often helps me relate better to my peers
+MESIII2_timepoint	I am able to make more friends when we like the same type of music 
+MESIII3_timepoint	There is a greater connection with my friends when we like the same music 
 
 R CODE 
 Social Connection 
-mydata$MESIII <- (mydata$MESIII1 + mydata$MESIII2 + mydata$MESIII3)
+mydata$MESIII <- (mydata$MESIII1_timepoint + mydata$MESIII2_timepoint + mydata$MESIII3_timepoint)
