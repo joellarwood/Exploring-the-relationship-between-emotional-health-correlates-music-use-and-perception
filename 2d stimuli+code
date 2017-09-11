@@ -49,3 +49,15 @@ MUAR = AROUSAL RATING
      mydata$MUVAHAPPY <- (mydata$MUVA21 + mydata$MUVA22 + mydata$MUVA23 + mydata$MUVA105) / 4 
      #AROUSAL
      mydata$MUARHAPPY <- (mydata$MUAR21 + mydata$MUAR22 + mydata$MUAR23 + mydata$MUAR15) / 4
+     
+   #TENDER MUSIC 
+    STIMULI 
+      MU41
+      MU42
+      MU43
+      MU44
+     R CODE
+     #VALENCE
+     mydata$MUVAHAPPY <- (mydata$MUVA41 + mydata$MUVA42 + mydata$MUVA43 + mydata$MUVA44) / 4 
+     #AROUSAL
+     mydata$MUARHAPPY <- (mydata$MUVA41 + mydata$MUVA42 + mydata$MUVA43 + mydata$MUVA44) / 4     
