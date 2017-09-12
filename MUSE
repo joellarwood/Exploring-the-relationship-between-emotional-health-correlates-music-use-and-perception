@@ -6,7 +6,8 @@ IML2        On average, how many hours do you purposefully listen to music a day
 
 Instructions	Using the scale provided as a guide, indicate how much you agree or disagree with each of the following statements by selecting the corresponding number
 
-Scoring:	  1: Strongly disagree 
+Scoring:	  0: Not at all/not applicable to me
+		  1: Strongly disagree 
 	          2: Disagree 
 	          3: Neutral 
 	          4: Agree
