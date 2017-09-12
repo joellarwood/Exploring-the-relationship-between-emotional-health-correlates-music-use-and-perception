@@ -27,4 +27,18 @@ MusicExperience1    Have you ever played a musical instrument or sung?          
 
 MusicExperience2    Howmany years did/have you played or sung for?                Open dropdown (1-20+)
 
-Genre               What is your favourite musical genre                          Open response 
+Genre               What is your favourite musical genre                          Blues (1)
+                                                                                  Jazz (2)
+                                                                                  Classical (3)
+                                                                                  Folk (4)
+                                                                                  Rock (5)
+                                                                                  Alternative (6)
+                                                                                  Heavy Metal (7)
+                                                                                  Country (8)
+                                                                                  Soundtracks (9)
+                                                                                  Religious (10)
+                                                                                  Pop (11)
+                                                                                  Rap/Hip-hop (12)
+                                                                                  RnB/Soul/Funk (13)
+                                                                                  Electronic/Dance (14)
+                                                                                  Other (15)
