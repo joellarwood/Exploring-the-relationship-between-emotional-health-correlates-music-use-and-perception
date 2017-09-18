@@ -21,11 +21,23 @@ Ethnicity           What is your ethnicity                                      
                         #If other 
 Ethnicity2          What is yor ethnicity                                         Open response
 
-MusicExperience1    Have you ever played a musical instrument or sung?           Yes (1)
+MusicExperience1    Have you ever played a musical instrument or sung?            Yes (1)
                                                                                   No  (0)                                                      
                         #If yes 
 
-MusicExperience2    Howmany years did/have you played or sung for?                Open dropdown (1-20+)
+HoursListened       How many hours a day do you deliberately listen to music?     0
+                                                                                  1
+                                                                                  2
+                                                                                  3
+                                                                                  4
+                                                                                  5
+                                                                                  6
+                                                                                  7
+                                                                                  8
+                                                                                  9
+                                                                                  10
+                                                                                  
+MusicExperience2    How many years did/have you played or sung for?               Open dropdown (1-20+)
 
 Genre               What is your favourite musical genre                          Blues (1)
                                                                                   Jazz (2)
@@ -42,3 +54,5 @@ Genre               What is your favourite musical genre                        
                                                                                   RnB/Soul/Funk (13)
                                                                                   Electronic/Dance (14)
                                                                                   Other (15)
+                           #If yes 
+Genre2               What is your favourite musical genre                         Open response             
