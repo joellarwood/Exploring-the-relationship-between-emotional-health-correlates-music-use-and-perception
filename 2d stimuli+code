@@ -5,59 +5,49 @@ MUAR = AROUSAL RATING
 #SAD MUSIC 
   STIMULI USED 
     MU31 
-    MU86
-    MU88
     MU109
    R CODE 
    #Valece
-   mydata$MUVASAD <- (mydata$MUVA31 + mydata$MUVA86 + mydata$MUVA88 + mydata$MUVA109) / 4
+   mydata$MUVASAD <- (mydata$MUVA31 + mydata$MUVA109) / 2
    #AROUSAL 
-   mydata$MUARSAD <- (mydata$MUAR31 + mydata$MUAR86 + mydata$MUAR88 + mydata$MUAR109) / 4
+   mydata$MUARSAD <- (mydata$MUAR31 + mydata$MUAR109) / 2
 
 #ANGRY MUSIC 
   STIMULI USED 
     MU1
-    MU2
-    MU3
     MU69
    R CODE
    #Valence 
-   mydata$MUVAANGRY <- (mydata$MUVA1 + mydata$MUVA2 +mydata$MUVA3 + mydata$MUVA69) / 4
+   mydata$MUVAANGRY <- (mydata$MUVA1 + mydata$MUVA69) / 2
    #AROUSAL
-   mydata$MUARANGRY <- (mydata$MUAR1 + mydata$MUAR3 + mydata$MUAR3 + mydata$MUAR69) / 4
+   mydata$MUARANGRY <- (mydata$MUAR1 + mydata$MUAR69) / 2
    
  #FEAR MUSIC 
   STIMULI USED
     MU11
-    MU13
     MU14
-    MU15
    R CODE
    #VALENCE
-   mydata$MUVAFEAR <- (mydata$MUVA11 + mydata$MUVA13 + mydata$MUVA14 + mydata$MUVA15) / 4
+   mydata$MUVAFEAR <- (mydata$MUVA11 + mydata$MUVA14) / 2
    #AROUSAL
-   mydata$MUARFEAR <- (mydata$MUAR11 + mydata$MUAR13 + mydata$MUAR14 + mydata$MUAR15) / 4
+   mydata$MUARFEAR <- (mydata$MUAR11 + mydata$MUAR14) / 2
    
    #HAPPY MUSIC 
     STIMULI 
-      MU21
-      MU22
       MU23
       MU105
      R CODE
      #VALENCE
-     mydata$MUVAHAPPY <- (mydata$MUVA21 + mydata$MUVA22 + mydata$MUVA23 + mydata$MUVA105) / 4 
+     mydata$MUVAHAPPY <- (mydata$MUVA23 + mydata$MUVA105) / 2 
      #AROUSAL
-     mydata$MUARHAPPY <- (mydata$MUAR21 + mydata$MUAR22 + mydata$MUAR23 + mydata$MUAR15) / 4
+     mydata$MUARHAPPY <- (mydata$MUAR23 + mydata$MUAR15) / 2
      
    #TENDER MUSIC 
     STIMULI 
       MU41
       MU42
-      MU43
-      MU44
      R CODE
      #VALENCE
-     mydata$MUVAHAPPY <- (mydata$MUVA41 + mydata$MUVA42 + mydata$MUVA43 + mydata$MUVA44) / 4 
+     mydata$MUVAHAPPY <- (mydata$MUVA41 + mydata$MUVA42) / 2 
      #AROUSAL
-     mydata$MUARHAPPY <- (mydata$MUVA41 + mydata$MUVA42 + mydata$MUVA43 + mydata$MUVA44) / 4     
+     mydata$MUARHAPPY <- (mydata$MUVA41 + mydata$MUVA42) / 2     
